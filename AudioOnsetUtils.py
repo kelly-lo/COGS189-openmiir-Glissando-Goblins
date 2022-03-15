@@ -62,16 +62,34 @@ for idx, key in enumerate(id_to_stimuli):
     else:
         stimuli_meta2[key]['audio_type'] = AudioType.NON_LYRICAL
 
+'''
+    Get the stimulus dictionary with format: 
 
+    { version : {
+            'song_id' : {
+                'cue_length' : Int,
+                'song_length' : Int,
+                'audio_type' : Int
+            }, 
+            ...
+        }
+    }
+'''
 def get_stim_dict():
     return {
         1: stimuli_meta1,
         2: stimuli_meta2
     }
 
+'''
+    Return the dictionary that maps the song ID to song name.
+'''
 def get_id_to_stim_dict():
     return id_to_stimuli
 
+'''
+    Return the song name given song ID.
+'''
 def get_id_to_song_name(song_id):
     if song_id in id_to_stimuli.keys():
         return id_to_stimuli[song_id]
@@ -79,9 +97,16 @@ def get_id_to_song_name(song_id):
         print("song_id does not exist: " + song_id)
         raise ValueError("song_id does not exist")
 
+'''
+    Get the list of participants, omitted 5.
+'''
 def get_participant_list():
     return participant_list
 
+
+'''
+    Get the stimulus version based on participant name.
+'''
 def get_participant_vers(participant_name):
     vers_1 = ["01", "04", "06", "07"]
     # vers_2 = ["09", "11", "12", "13", "14"]
@@ -91,6 +116,9 @@ def get_participant_vers(participant_name):
         print("participant_name does not exist: " + participant_name)
         raise ValueError("participant_name does not exist")
 
+'''
+    Get the specific dictionary based on version passed in.
+'''
 def get_vers_stim_dict(vers):
     if vers == 1:
         return stimuli_meta1
