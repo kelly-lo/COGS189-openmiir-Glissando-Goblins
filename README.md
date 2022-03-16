@@ -1,6 +1,7 @@
-COGS189 OpenMIIR Project - Glissando-Goblins
+COGS189 OpenMIIR Classification Project 
 ============================
 > Used the [OpenMIRR dataset](https://github.com/sstober/openmiir).
+> Group Name: __Glissando-Goblins__
 
 We want to study how brain waves differ between the types of music that participants listen to, specifically to the absence of lyrics in music. We also want to observe if brain waves vary or remain uniform between listening sessions that contain similar types of music. 
 
