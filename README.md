@@ -4,7 +4,7 @@ COGS189 OpenMIIR Project - Glissando-Goblins
 
 We want to study how brain waves differ between the types of music that participants listen to, specifically to the absence of lyrics in music. We also want to observe if brain waves vary or remain uniform between listening sessions that contain similar types of music. 
 
-### Directory
+### Directory Outline
 
     .
     ├── ica_data/               # ICA fif files - each file corresponds to one participant, 
