@@ -6,6 +6,8 @@ We want to study how brain waves differ between the types of music that particip
 
 __Classification Goal__: Predict whether a participant is listening to a lyrical or nonlyrical song based on the snippet of EEG data corresponding to when that song was played.
 
+Preprocessing methodology heavily followed the preprocessing steps discussed in [(Stober* 2017)]https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01255/full.
+
 ### Directory Outline
 
     .
